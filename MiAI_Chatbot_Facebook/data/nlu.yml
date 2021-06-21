@@ -1,0 +1,267 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - xin chào
+    - chào bạn
+    - hello
+    - hi
+    - hey
+    - mình có vài câu hỏi
+    - có ai giúp mình không
+    - bạn ơi
+    - anh ơi
+    - chị ơi
+    - cháu ơi
+    - hello
+    - chào
+    - hi
+    - có ai ở đây không?
+    - admin ơi
+    - cô ơi
+    - thầy ơi
+    - xin chào
+    - cho em hỏi
+    - cho con hỏi
+    - cho mình hỏi
+
+- intent: goodbye
+  examples: |
+    - tạm biệt
+    - chào tạm biệt
+    - chào tạm biệt em
+    - tạm biệt em
+    - tạm biệt em nhé
+    - hẹn gặp lại sau
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - thật mà
+    - chắc chắn rồi
+    - nghe có vẻ tốt
+    - chính xác
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - không bao giờ
+    - tôi không nghĩ vậy
+    - rôi không thích nó
+    - không đời nào
+    - không chắc
+
+- intent: mood_great
+  examples: |
+    - hoàn hảo
+    - tuyệt
+    - thật kinh ngạc
+    - cảm giác như một vị vua
+    - tuyệt với
+    - Tôi cảm thấy thật tuyệt với
+    - Tôi cảm thấy thật kinh ngạc
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - ngày hôm nay thật kinh khủng
+    - tôi cảm thất buồn
+    - tôi cảm thấy không tốt lắm
+    - Tôi thất vọng
+    - siêu buồn
+    - tôi buồn quá
+    - tệ thật
+    - rất tệ
+    - không vui
+    - không tốt
+    - rất không tốt
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - bạn là bot à?
+    - bạn có phải là người?
+    - bạn không phải là người hả?
+    - tôi đang nói chuyện với bot?
+    - tôi đang nói chuyên với bot?
+
+- intent: thank
+  examples: |
+    - chuẩn
+    - hay
+    - siêu
+    - tuyệt
+    - cám ơn
+    - thanks
+    - thank you
+    - ok
+    - cảm ơn em
+    - cảm ơn em nhiều nhé
+    - cảm ơn
+- intent: ask_func_list
+  examples: |
+    - bạn có thể làm được những gì
+    - bạn giúp được gì nào
+    - chức năng của bạn là gì
+    - bạn có thể làm được mấy chức năng
+    - bạn giỏi nhất làm gì
+    - bạn có tư vấn giúp mình được không
+    - việc gì bạn làm được
+    - kể xem bạn làm được gì
+    - cho mình biết bạn làm được gì nhé
+    - bạn hữu dụng như thế nào
+    - bạn có ích trong những việc gì
+    - lĩnh vực gì bạn giỏi nhất
+    - mình tò mò về những việc bạn làm được
+    - chẳng biết bạn làm được gì
+    - bạn tệ nhất trong việc gì
+    - bạn biết được những lĩnh vực gì
+    - bạn giỏi hỗ trợ nhất trong lĩnh vực gì
+    - kể cho mình biết những việc bạn có thể làm được nhé
+    - nói cho mình về những việc bạn giúp được mình
+    - bạn giúp được mình gì nào
+    - bạn có thể làm gì
+    - em giúp được gì
+    - em làm được gì
+    - mày biết làm gì
+    - em biết làm gì
+    - bạn biết làm gì
+    - biết làm gì
+    - làm được gì
+    - có làm được gì
+    - có làm được trò gì
+    - giúp giúp cái gì
+    - biết gì mà nói
+    - làm được gì
+    - giúp được gì
+    - mày làm được gì
+    - có biết gì
+- intent: ask_name
+  examples: |
+    - bạn tên gì
+    - tên gì
+    - chị tên gì
+    - anh tên gì
+    - tên của bạn là gì
+    - tên của chị là gì
+    - tên của anh là gì
+    - cho mình hỏi tên nhé
+    - mình muốn biết tên bạn
+    - mình muốn tiện xưng hộ hơn, cho mình biết tên nhé
+    - để tiện xưng hộ thì tên bạn là gì
+    - cho em xin tên của anh ạ
+    - cho em xin tên của chị ạ
+    - được biết tên bạn thì tốt nhỉ
+    - vui lòng cho mình biết tên nhé
+    - xin phép hỏi tên của bạn
+    - vậy thì tên bạn là gì
+    - tên bạn trong tiếng việt là gì
+    - bạn có vui lòng cho mình biết tên được không
+    - chúng ta nên biết tên nhau nhỉ?
+    - em tên là gì thế
+    - tên em là gì
+    - tên em
+    - tên bạn
+    - bạn tên là gì
+    - bạn tên gì thế
+    - em tên gì
+
+- intent: hoi_congnghethongtin
+  examples: |
+    - Trường mình có nghành công nghệ phần mềm không ạ
+    - trường có đào tạo công nghệ thông tin không ạ
+    - công nghệ thông tin
+    - về ngành công nghệ thông tin của trường ạ
+    - Kí túc xá của trường có gần chỗ học không ạ
+    - Vậy trường có ngành công nghệ thông tin không ạ
+    - trường có ngành công nghệ thông tin phải không
+    - cho mình hỏi trường có đào tạo ngành công nghệ thông tin phải không
+
+- intent: hoi_kitucxa
+  examples: |
+    - trường có kí túc xá không ạ
+    - kí túc xá
+    - kí túc xá của trường ạ
+    - Kí túc xá của trường có gần chỗ học không ạ
+    - Vậy trường có kí túc xá không ạ
+    - trường có kí túc xá phải không
+
+- intent: hoi_xethocba
+  examples: |
+    - Dạ! Trường ơi, cho em hỏi trường mình có xét học bạ không ạ
+    - Em muốn hỏi thêm thông tin tuyển sinh bằng phương thức xét học bạ được không ạ
+    - trường có xét học bạn không ạ
+    - Có xét học bạ không ạ
+    - Trường mình có xét học bạ không vậy ạ
+    - Không biết có thể xét học bạ để theo học tại quý trường không
+    - Trường có xét tuyển học bạ không ạ
+    - Năm nay trường có xét học bạ không ạ
+    - ADmin ơi..cho em hỏi là năm nay trường có xét học bạ không ạ
+    - Dạ vậy trường mình có xét học bạ không vậy ạ
+    - Có được xét học bạ không ạ
+
+- intent: hoi_hinhthucxettuyen
+  examples: |
+    - Em muốn tìm hiểu về hình thức xét tuyển của trường
+    - Admin ơi cho em hỏi là năm nay trường mình tuyển sinh như thế nào ạ
+    - Trường mình có mấy cách xét tuyển sinh ạ
+    - Cho em hỏi cách thức xét tuyển
+    - Cho em xin những cách xét tuyển bên trường mình được không ạ
+    - Cho em hỏi hình thức xét tuyển với ạ
+    - Cho em hỏi đầu vào như nào ạ
+    - Cho em hỏi xét tuyển bên mình là như thế nào ạ
+    - Cho em hỏi trường mình tuyển sinh như thế nào ạ
+    - Trường có thể tư vấn về hình thức xét tuyển không ạ
+    - Ad ơi, năm nay trường mình tuyển sinh có theo phương thức xét tuyển k ạ
+    - Xin chào, em tốt nghiệp năm 2020 không biết có được tuyển sinh vào trường mình không ạ
+    - Hiện tại em muốn đăng kí học thì phải xét tuyển theo phương thức nào ạ
+
+- intent: hoi_tuyensinhonline
+  examples: |
+    - Amin ơi cho em hỏi trường mình có xét tuyển trực tiếp không ạ
+    - Amin ơi cho em hỏi trường mình có xét tuyển online không ạ
+    - Admin ơi cho em hỏi là năm nay trường mình xét tuyển online không ạ
+    - Trường mình có xét tuyển trực tiếp không ạ
+    - Trường mình có xét tuyển online không ạ
+
+- intent: hoi_diemuutien
+  examples: |
+    - Em muốn xét học bạ năm nay á , em muốn hỏi là điểm xét học bạ có cộng điểm khu vực và điểm nghề không ạ
+    - Em chào trường ạ, cho em hỏi là em muốn xét học bạ vào trường mình ấy ạ, không biết trường mình có cộng điểm ưu tiên hoặc điểm nghề không ạ
+    - Admin ơi! cho em hỏi xét học bạ có cộng điểm ưu tiên không ạ
+
+- intent: hoi_diemtohopxethocba
+  examples: |
+    - Cho em hỏi cách tính điểm tổ hợp ba học kì sao ạ
+    - Dạ cho con hỏi là trường mình xét học bạ như thế nào vậy ạ
+    - Dạ em muốn hỏi là em muốn xét học bạ THPT thì là xét học bạ của học kì nào lớp mấy á
+    - Dạ điểm học bạ là như nào ạ ?
+    - Trường mình có xét học bạ lớp 12 không ạ?
+    - Trường mình xét học bạ là 5 kỳ hay 3 kỳ vậy ạ
+    - Trường ơi !cho em hỏi trường mình xét học bạ theo hình thức nào vậy ạ
+
+- intent: hoi_hocphi
+  examples: |
+    - Cho mình hỏi ngành quản trị nhà hàng điểm xét tuyển và mức học phí là bao nhiêu vậy ạ
+    - Trường cho em xin hỏi về học phí ngành đông phương học được không ạ
+    - Vậy còn học phí ạ
+    - Học phí trường mình thì sao ạ
+    - Nếu em học ngôn ngữ Nhật và quản trị dịch vụ và lữ hành thì chi phí như nào ạ
+    - Chi phí học Nhật Bản học là bao nhiêu ạ
+    - Học phí tầm bao nhiêu ạ
+    - Học phí bao nhiêu một năm vậy admin
+    - Một năm học phí là bao nhiêu ạ
+    - Cho em hỏi học phí ạ
+    - Mình muốn hỏi học phí ngành quản trị kinh doanh là bao nhiêu vậy
+    - Học phí trường này là bao nhiêu
+    - Em chào Amin ạ, cho em hỏi là học phí của trường mình ngành nào cũng 5 triệu một học kì phải không ạ
+    - Cho e hỏi là học phí của trường mình là bao nhiêu ạ
+    - Học phí ngành du lịch như nào vậy ạ? Một năm bao nhiêu tiền học phí vậy ạ?
+    - Em cần tìm hiểu về tiền học phí ạ

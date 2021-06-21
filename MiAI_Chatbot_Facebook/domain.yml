@@ -1,0 +1,89 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - thank
+  - bye
+  - ask_func_list
+  - ask_name
+  - hoi_congnghethongtin
+  - hoi_kitucxa
+  - hoi_xethocba
+  - hoi_hinhthucxettuyen
+  - hoi_tuyensinhonline
+  - hoi_diemuutien
+  - hoi_diemtohopxethocba
+  - hoi_hocphi
+
+responses:
+  utter_greet:
+  - text: "Chào bạn! Tôi có thể giúp gì cho bạn?"
+
+  utter_cheer_up:
+  - text: "Đây là một cái gì đó để cổ vũ bạn:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Điều đó có giúp bạn không?"
+
+  utter_happy:
+  - text: "Tuyệt vời, tiếp tục!"
+
+  utter_goodbye:
+  - text: "Tạm biệt! Hẹn gặp lại"
+
+  utter_iamabot:
+  - text: "Tôi là một con bot chát! Ahihi"
+
+  utter_bye:
+    - text: "Tạm biệt bạn nhé!"
+    - text: "Tạm biệt bạn nhé và chúc bạn một ngày tốt lành!"
+
+  utter_thank:
+    - text: "Không có gì ạ!"
+    - text: "Dạ không có gì, đó là trách nhiệm của em mà!"
+
+  utter_func_list:
+    - text: "Em có thể làm được rất nhiều thứ: hát, đọc thơ, đọc chuyện...nhưng giờ em chỉ chat thôi!"
+
+  utter_ask_name:
+    - text: "Em họ Chat, tên Bot! Người ta hay gọi em là Chat Bot thông minh xinh đẹp giỏi giang nhất vũ trụ ạ! Bạn cần trợ giúp gì ạ?"
+    - text: "Dạ thưa. Tên Tiếng Việt của em là Trợ lý ảo nhưng em thích gọi bằng tên Tiếng Anh là Chatbot Bot cho nó Tây!"
+  utter_unclear:
+    - text: "Xin lỗi bạn, hiện tại tôi chưa hiểu được yêu cầu của bạn. "
+
+  utter_hoi_kitucxa:
+    - text: "Kí túc xá cách Trường 1,5km. Chi phí là 600.000/phòng 6 người/tháng (tương đương 100.000/người/tháng). Tiền điện nước tính riêng"
+
+  utter_hoi_congnghethongtin:
+    - text: "Có bạn nhé! Bạn có thể tham khảo thêm về ngành học trên group này nhé!"
+
+  utter_hoi_xethocba:
+    - text: "Có bạn nhé! Trường có xét điểm thi THPT quốc gia và cả điểm học bạ ạ!"
+    - text: "Có bạn nhé! Ahihi!"
+
+  utter_hoi_hinhthucxettuyen:
+    - text: "Trường năm nay xét tuyển bằng học bạ và xét tuyển bằng điểm thi THPT nhé bạn!"
+
+  utter_hoi_tuyensinhonline:
+    - text: "Trường không có tuyển sinh trực tiếp nha!"
+    - text: "Trường không có tuyển sinh online nha!"
+
+  utter_hoi_diemuutien:
+    - text: "Chỉ cộng điểm ưu tiên khu vực và ưu tiên đối tượng thôi nhé !"
+
+  utter_hoi_diemtohopxethocba:
+    - text: "Mỗi môn thì bạn lấy điểm trung bình cộng của điểm cả năm lớp 11 và học kỳ 1 lớp 12"
+
+  utter_hoi_hocphi:
+    - text: "Học phí tính theo hệ thức tín chỉ, trung bình khoảng 6tr/ 1 học kỳ. Một năm học có 2 học kỳ chính nha bạn"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
