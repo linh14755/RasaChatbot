@@ -20,6 +20,11 @@ intents:
   - hoi_diemuutien
   - hoi_diemtohopxethocba
   - hoi_hocphi
+  - hoi_chitieucongnghethongtin
+  - hoi_tohopmoncongnghethongtin
+  - hoi_ngonnguanh
+  - hoi_chitieungonnguanh
+  - hoi_tohopmonngonnguanh
 
 responses:
   utter_greet:
@@ -62,7 +67,7 @@ responses:
     - text: "Kí túc xá cách Trường 1,5km. Chi phí là 600.000/phòng 6 người/tháng (tương đương 100.000/người/tháng). Tiền điện nước tính riêng"
 
   utter_hoi_congnghethongtin:
-    - text: "Có bạn nhé! Bạn có thể tham khảo thêm về ngành học trên group này nhé!"
+    - text: "Trường có đào tạo ngành công nghệ thông tin bạn nhé! Bạn có thể tham khảo thêm về ngành học trên fanpage DLU!"
 
   utter_hoi_xethocba:
     - text: "Có bạn nhé! Trường có xét điểm thi THPT quốc gia và cả điểm học bạ ạ!"
@@ -83,6 +88,21 @@ responses:
 
   utter_hoi_hocphi:
     - text: "Học phí tính theo hệ thức tín chỉ, trung bình khoảng 6tr/ 1 học kỳ. Một năm học có 2 học kỳ chính nha bạn"
+
+  utter_hoi_chitieucongnghethongtin:
+    - text: "Chỉ tiêu dự kiến năm 2021 của ngành công nghệ thông tin sẽ là 180 nha bạn"
+
+  utter_hoi_tohopmoncongnghethongtin:
+    - text: "Ngành công nghệ thông tin xét tuyển các tổ hợp môn gồm A00, A01, D07, D90 nha bạn"
+
+  utter_hoi_ngonnguanh:
+    - text: "Trường có đào tạo ngành ngôn ngữ anh bạn nhé! Bạn có thể tham khảo thêm về ngành học trên fanpage DLU!"
+
+  utter_hoi_chitieungonnguanh:
+    - text: "Chỉ tiêu dự kiến năm 2021 của ngành ngôn ngữ anh sẽ là 250 nha bạn"
+
+  utter_hoi_tohopmonngonnguanh:
+    - text: "Ngôn ngữ Anh xét các tổ hợp D01, D72, D96 bạn nhé"
 
 session_config:
   session_expiration_time: 60

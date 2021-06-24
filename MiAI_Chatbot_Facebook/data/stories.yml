@@ -99,7 +99,7 @@ stories:
     - intent: bye
     - action: utter_bye
 
-- story: Chào - hỏi xét học bạ - hỏi ngành cntt - hỏi ktx - tạm biệt
+- story: Chào - hỏi xét học bạ - hỏi ngành cntt - hỏi tổ hợp môn - hỏi chỉ tiêu cntt - hỏi ktx - tạm biệt
   steps:
     - intent: greet
     - action: utter_greet
@@ -107,6 +107,10 @@ stories:
     - action: utter_hoi_xethocba
     - intent: hoi_congnghethongtin
     - action: utter_hoi_congnghethongtin
+    - intent: hoi_tohopmoncongnghethongtin
+    - action: utter_hoi_tohopmoncongnghethongtin
+    - intent: hoi_chitieucongnghethongtin
+    - action: utter_hoi_chitieucongnghethongtin
     - intent: hoi_kitucxa
     - action: utter_hoi_kitucxa
     - intent: bye
@@ -128,7 +132,7 @@ stories:
     - intent: bye
     - action: utter_bye
 
-- story: Chào - hỏi hình thức xét tuyển - hỏi ngành cntt - hỏi ktx - tạm biệt
+- story: Chào - hỏi hình thức xét tuyển - hỏi ngành cntt - hỏi chỉ tiêu - hỏi tổ hợp môn - hỏi ktx - tạm biệt
   steps:
     - intent: greet
     - action: utter_greet
@@ -136,6 +140,10 @@ stories:
     - action: utter_hoi_hinhthucxettuyen
     - intent: hoi_congnghethongtin
     - action: utter_hoi_congnghethongtin
+    - intent: hoi_chitieucongnghethongtin
+    - action: utter_hoi_chitieucongnghethongtin
+    - intent: hoi_tohopmoncongnghethongtin
+    - action: utter_hoi_tohopmoncongnghethongtin
     - intent: hoi_kitucxa
     - action: utter_hoi_kitucxa
     - intent: bye
@@ -190,7 +198,7 @@ stories:
     - intent: bye
     - action: utter_bye
 
-- story: Chào - hỏi tuyển sinh online - hỏi hình thức xét tuyển - hỏi ngành cntt - hỏi ktx - hỏi điểm ưu tiên - tạm biệt
+- story: Chào - hỏi tuyển sinh online - hỏi hình thức xét tuyển - hỏi ngành cntt - hỏi tổ hợp môn - hỏi ktx - hỏi điểm ưu tiên - tạm biệt
   steps:
     - intent: greet
     - action: utter_greet
@@ -200,6 +208,8 @@ stories:
     - action: utter_hoi_hinhthucxettuyen
     - intent: hoi_congnghethongtin
     - action: utter_hoi_congnghethongtin
+    - intent: hoi_tohopmoncongnghethongtin
+    - action: utter_hoi_tohopmoncongnghethongtin
     - intent: hoi_kitucxa
     - action: utter_hoi_kitucxa
     - intent: hoi_diemuutien
@@ -217,7 +227,7 @@ stories:
     - action: utter_bye
 
 
-- story: Chào - hỏi xét học bạ - hỏi cách xét học bạ - hỏi ngành cntt - hỏi ktx - tạm biệt
+- story: Chào - hỏi xét học bạ - hỏi cách xét học bạ - hỏi ngành cntt - hỏi tổ hợp môn - hỏi chỉ tiêu - hỏi ktx - tạm biệt
   steps:
     - intent: greet
     - action: utter_greet
@@ -226,13 +236,17 @@ stories:
     - intent: hoi_diemtohopxethocba
     - action: utter_hoi_diemtohopxethocba
     - intent: hoi_congnghethongtin
-    - action: utter_hoi_congnghethongtin
+    - intent: utter_hoi_congnghethongtin
+    - intent: hoi_tohopmoncongnghethongtin
+    - action: utter_hoi_tohopmoncongnghethongtin
+    - intent: hoi_chitieucongnghethongtin
+    - action: utter_hoi_chitieucongnghethongtin
     - intent: hoi_kitucxa
     - action: utter_hoi_kitucxa
     - intent: bye
     - action: utter_bye
 
-- story: Chào - hỏi xét học bạ - hỏi cách xét học bạ - hỏi điểm ưu tiên- hỏi ngành cntt - hỏi ktx - tạm biệt
+- story: Chào - hỏi xét học bạ - hỏi cách xét học bạ - hỏi điểm ưu tiên- hỏi ngành cntt- hỏi chỉ tiêu  - hỏi tô hợp môn - hỏi ktx - tạm biệt
   steps:
     - intent: greet
     - action: utter_greet
@@ -244,12 +258,16 @@ stories:
     - action: utter_hoi_diemuutien
     - intent: hoi_congnghethongtin
     - action: utter_hoi_congnghethongtin
+    - intent: hoi_chitieucongnghethongtin
+    - action: utter_hoi_chitieucongnghethongtin
+    - intent: hoi_tohopmoncongnghethongtin
+    - action: utter_hoi_tohopmoncongnghethongtin
     - intent: hoi_kitucxa
     - action: utter_hoi_kitucxa
     - intent: bye
     - action: utter_bye
 
-- story: Chào - hỏi xét học bạ - hỏi cách xét học bạ - hỏi điểm ưu tiên- hỏi ngành cntt - hỏi ktx  - hỏi học phí - tạm biệt
+- story: Chào - hỏi xét học bạ - hỏi cách xét học bạ - hỏi điểm ưu tiên- hỏi ngành cntt - hỏi tổ hợp môn - hỏi chỉ tiêu - hỏi ktx  - hỏi học phí - tạm biệt
   steps:
     - intent: greet
     - action: utter_greet
@@ -259,6 +277,34 @@ stories:
     - action: utter_hoi_diemtohopxethocba
     - intent: hoi_diemuutien
     - action: utter_hoi_diemuutien
+    - intent: hoi_congnghethongtin
+    - action: utter_hoi_congnghethongtin
+    - intent: hoi_tohopmoncongnghethongtin
+    - action: utter_hoi_tohopmoncongnghethongtin
+    - intent: hoi_chitieucongnghethongtin
+    - action: utter_hoi_chitieucongnghethongtin
+    - intent: hoi_kitucxa
+    - action: utter_hoi_kitucxa
+    - intent: hoi_hocphi
+    - action: utter_hoi_hocphi
+    - intent: bye
+    - action: utter_bye
+
+- story: hỏi ngành cntt - hỏi chỉ tiêu
+  steps:
+    - intent: hoi_congnghethongtin
+    - action: utter_hoi_congnghethongtin
+    - intent: hoi_chitieucongnghethongtin
+    - action: utter_hoi_chitieucongnghethongtin
+
+- story: Chào - hỏi xét học bạ - hỏi cách xét học bạ - hỏi ngành cntt -  hỏi ktx  - hỏi học phí - tạm biệt
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: hoi_xethocba
+    - action: utter_hoi_xethocba
+    - intent: hoi_diemtohopxethocba
+    - action: utter_hoi_diemtohopxethocba
     - intent: hoi_congnghethongtin
     - action: utter_hoi_congnghethongtin
     - intent: hoi_kitucxa
@@ -268,7 +314,7 @@ stories:
     - intent: bye
     - action: utter_bye
 
-- story: Chào - hỏi xét học bạ - hỏi cách xét học bạ - hỏi ngành cntt - hỏi ktx  - hỏi học phí - tạm biệt
+- story: Chào - hỏi xét học bạ - hỏi cách xét học bạ - hỏi ngành nna - hỏi tổ hợp môn - hỏi chỉ tiêu - hỏi ktx - tạm biệt
   steps:
     - intent: greet
     - action: utter_greet
@@ -276,8 +322,78 @@ stories:
     - action: utter_hoi_xethocba
     - intent: hoi_diemtohopxethocba
     - action: utter_hoi_diemtohopxethocba
-    - intent: hoi_congnghethongtin
-    - action: utter_hoi_congnghethongtin
+    - intent: hoi_ngonnguanh
+    - action: utter_hoi_ngonnguanh
+    - intent: hoi_tohopmonngonnguanh
+    - action: utter_hoi_tohopmonngonnguanh
+    - intent: hoi_chitieungonnguanh
+    - action: utter_hoi_chitieungonnguanh
+    - intent: hoi_kitucxa
+    - action: utter_hoi_kitucxa
+    - intent: bye
+    - action: utter_bye
+
+- story: Chào - hỏi xét học bạ - hỏi cách xét học bạ - hỏi điểm ưu tiên- hỏi ngành nna- hỏi chỉ tiêu  - hỏi tô hợp môn - hỏi ktx - tạm biệt
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: hoi_xethocba
+    - action: utter_hoi_xethocba
+    - intent: hoi_diemtohopxethocba
+    - action: utter_hoi_diemtohopxethocba
+    - intent: hoi_diemuutien
+    - action: utter_hoi_diemuutien
+    - intent: hoi_ngonnguanh
+    - action: utter_hoi_ngonnguanh
+    - intent: hoi_chitieungonnguanh
+    - action: utter_hoi_chitieungonnguanh
+    - intent: hoi_tohopmonngonnguanh
+    - action: utter_hoi_tohopmonngonnguanh
+    - intent: hoi_kitucxa
+    - action: utter_hoi_kitucxa
+    - intent: bye
+    - action: utter_bye
+
+- story: Chào - hỏi xét học bạ - hỏi cách xét học bạ - hỏi điểm ưu tiên- hỏi ngành nna - hỏi tổ hợp môn - hỏi chỉ tiêu - hỏi ktx  - hỏi học phí - tạm biệt
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: hoi_xethocba
+    - action: utter_hoi_xethocba
+    - intent: hoi_diemtohopxethocba
+    - action: utter_hoi_diemtohopxethocba
+    - intent: hoi_diemuutien
+    - action: utter_hoi_diemuutien
+    - intent: hoi_ngonnguanh
+    - action: utter_hoi_ngonnguanh
+    - intent: hoi_tohopmonngonnguanh
+    - action: utter_hoi_tohopmonngonnguanh
+    - intent: hoi_chitieungonnguanh
+    - action: utter_hoi_chitieungonnguanh
+    - intent: hoi_kitucxa
+    - action: utter_hoi_kitucxa
+    - intent: hoi_hocphi
+    - action: utter_hoi_hocphi
+    - intent: bye
+    - action: utter_bye
+
+- story: hỏi ngành nna - hỏi chỉ tiêu
+  steps:
+    - intent: hoi_ngonnguanh
+    - action: utter_hoi_ngonnguanh
+    - intent: hoi_chitieungonnguanh
+    - action: utter_hoi_chitieungonnguanh
+
+- story: Chào - hỏi xét học bạ - hỏi cách xét học bạ - hỏi ngành nna -  hỏi ktx  - hỏi học phí - tạm biệt
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: hoi_xethocba
+    - action: utter_hoi_xethocba
+    - intent: hoi_diemtohopxethocba
+    - action: utter_hoi_diemtohopxethocba
+    - intent: hoi_ngonnguanh
+    - action: utter_hoi_ngonnguanh
     - intent: hoi_kitucxa
     - action: utter_hoi_kitucxa
     - intent: hoi_hocphi

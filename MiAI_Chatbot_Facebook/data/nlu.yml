@@ -179,10 +179,30 @@ nlu:
     - trường có đào tạo công nghệ thông tin không ạ
     - công nghệ thông tin
     - về ngành công nghệ thông tin của trường ạ
-    - Kí túc xá của trường có gần chỗ học không ạ
     - Vậy trường có ngành công nghệ thông tin không ạ
     - trường có ngành công nghệ thông tin phải không
     - cho mình hỏi trường có đào tạo ngành công nghệ thông tin phải không
+
+- intent: hoi_chitieucongnghethongtin
+  examples: |
+    - Cho em hỏi năm nay chỉ tiêu ngành cntt là bn ạ
+    - Cho em hỏi năm nay chỉ tiêu ngành công nghệ thông tin là bao nhiêu ạ
+    - Chỉ tiêu của ngành này thì sao
+    - Ngành này năm nay chỉ tiêu bao nhiêu
+    - Ad cho hỏi chỉ tiêu của ngành cntt là bao nhiêu
+    - Cho mình hỏi về chỉ tiêu thì sao ạ
+    - Chỉ tiêu ngành này ạ
+
+- intent: hoi_tohopmoncongnghethongtin
+  examples: |
+    - Cho em hỏi ngành công nghệ thông tin xét tuyển tổ hợp các môn nào ạ
+    - Ngành công nghệ thông tin xét tuyển tổ hợp các môn nào ạ
+    - Các tổ hợp môn xét tuyển của ngành này ạ
+    - Các môn tổ hợp của ngành này ạ
+    - Các tổ hợp môn xét tuyển của ngành cntt
+    - Các môn tổ hợp của ngành cntt
+    - ad cho mình hỏi ngành công nghệ thông tin thì xét những tổ hợp môn gì
+    - Ngành này xét các tổ hợp môn gì ạ
 
 - intent: hoi_kitucxa
   examples: |
@@ -192,6 +212,14 @@ nlu:
     - Kí túc xá của trường có gần chỗ học không ạ
     - Vậy trường có kí túc xá không ạ
     - trường có kí túc xá phải không
+    - trường có KTX không ạ
+    - KTX
+    - KTX của trường ạ
+    - KTX của trường có gần chỗ học không ạ
+    - Vậy trường có KTX không ạ
+    - trường có KTX phải không
+    - Trường có KTX phải không ạ
+    - Kí túc xá của trường có gần chỗ học không ạ? Trong trường hợp nếu sinh viên muốn đi làm thêm thì nếu ở trong KTX thì có được không ạ?
 
 - intent: hoi_xethocba
   examples: |
@@ -236,6 +264,8 @@ nlu:
     - Em muốn xét học bạ năm nay á , em muốn hỏi là điểm xét học bạ có cộng điểm khu vực và điểm nghề không ạ
     - Em chào trường ạ, cho em hỏi là em muốn xét học bạ vào trường mình ấy ạ, không biết trường mình có cộng điểm ưu tiên hoặc điểm nghề không ạ
     - Admin ơi! cho em hỏi xét học bạ có cộng điểm ưu tiên không ạ
+    - Điểm ưu tiên thì sao ạ
+    - Trường có cộng điểm ưu tiên không
 
 - intent: hoi_diemtohopxethocba
   examples: |
@@ -246,6 +276,10 @@ nlu:
     - Trường mình có xét học bạ lớp 12 không ạ?
     - Trường mình xét học bạ là 5 kỳ hay 3 kỳ vậy ạ
     - Trường ơi !cho em hỏi trường mình xét học bạ theo hình thức nào vậy ạ
+    - Cho hỏi cách xét học bạ ạ
+    - Học bạ thì xét như thế nào ạ
+    - Xét học bạ như thế nào ạ
+    - Cho em hỏi trường xét học bạ kiểu nào ạ
 
 - intent: hoi_hocphi
   examples: |
@@ -253,6 +287,8 @@ nlu:
     - Trường cho em xin hỏi về học phí ngành đông phương học được không ạ
     - Vậy còn học phí ạ
     - Học phí trường mình thì sao ạ
+    - Học phí
+    - trường hóc  phí bao nhiêu ạ
     - Nếu em học ngôn ngữ Nhật và quản trị dịch vụ và lữ hành thì chi phí như nào ạ
     - Chi phí học Nhật Bản học là bao nhiêu ạ
     - Học phí tầm bao nhiêu ạ
@@ -265,3 +301,35 @@ nlu:
     - Cho e hỏi là học phí của trường mình là bao nhiêu ạ
     - Học phí ngành du lịch như nào vậy ạ? Một năm bao nhiêu tiền học phí vậy ạ?
     - Em cần tìm hiểu về tiền học phí ạ
+    - Học phí có cao không trường
+
+- intent: hoi_ngonnguanh
+  examples: |
+    - Trường mình có nghành ngôn ngữ anh không ạ
+    - trường có đào tạo ngôn ngữ anh không ạ
+    - ngôn ngữ anh
+    - về ngành ngôn ngữ anh của trường ạ
+    - Vậy trường có ngành ngôn ngữ anh không ạ
+    - trường có ngành ngôn ngữ anh phải không
+    - cho mình hỏi trường có đào tạo ngành ngôn ngữ anh phải không
+
+- intent: hoi_chitieungonnguanh
+  examples: |
+    - Cho em hỏi năm nay chỉ tiêu ngành ngôn ngữ anh là bn ạ
+    - Cho em hỏi năm nay chỉ tiêu ngành ngôn ngữ anh là bao nhiêu ạ
+    - Chỉ tiêu của ngành này thì sao
+    - Ngành này năm nay chỉ tiêu bao nhiêu
+    - Ad cho hỏi chỉ tiêu của ngành ngôn ngữ anh là bao nhiêu
+    - Cho mình hỏi về chỉ tiêu thì sao ạ
+    - Chỉ tiêu ngành này ạ
+
+- intent: hoi_tohopmonngonnguanh
+  examples: |
+    - Cho em hỏi ngành ngôn ngữ anh xét tuyển tổ hợp các môn nào ạ
+    - Ngành ngôn ngữ anh xét tuyển tổ hợp các môn nào ạ
+    - Các tổ hợp môn xét tuyển của ngành này ạ
+    - Các môn tổ hợp của ngành này ạ
+    - Các tổ hợp môn xét tuyển của ngành ngôn ngữ anh
+    - Các môn tổ hợp của ngành ngôn ngữ anh
+    - ad cho mình hỏi ngành ngôn ngữ anh thì xét những tổ hợp môn gì
+    - Ngành này xét các tổ hợp môn gì ạ
